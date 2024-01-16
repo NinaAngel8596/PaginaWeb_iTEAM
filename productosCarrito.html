@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Tienda</title>
+		<link rel="stylesheet" href="styleCarrito.css" />
+		<link rel="stylesheet" href="style3.css">
+	</head>
+	<body>
+
+
+		
+        <div class="menu container">
+
+            <img class="logo-1" src="images/iteam-logo.png">
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="images/menu.png">
+            </label>
+            <nav class="navbar">
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="soporte.html">Soporte</a></li>
+                    </ul>
+                </div>
+                <img class="logo-2" src="images/iteam-logo.png" alt="">
+                <div class="menu-2">
+                    <ul>
+                        <li><a href="#">Horario</a></li>
+                    </ul>
+                    <div class="socials">
+                        <a href="#">
+                            <div class="social">
+                                <img src="images/s1.svg">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="images/s2.svg">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="images/s3.svg">
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+
+            </nav>
+        </div>
+
+		
+		<div class="buscar-filtrar-wrapper">
+			<input type="text" id="buscarNombre" placeholder="Buscar por nombre">
+			<button class="buscar-filtrar-button" onclick="buscarPorNombre()">Buscar</button>
+		
+			<label for="modeloFiltro"></label>
+			<select id="modeloFiltro" onchange="filtrarPorModelo()">
+				<option value="todos">Todos</option>
+				<option value="iphone15promax">Iphone 15 Pro Max</option>
+				<option value="iphone14promax">Iphone 14 Pro Max</option>
+				<option value="iphone15pro">Iphone 15 Pro</option>
+				<option value="iphone15">Iphone 15</option>
+				<option value="iphone13promax">Iphone 13 Pro Max</option>
+				<option value="iphone13pro">Iphone 13 Pro </option>
+				<option value="iphone13">Iphone 13</option>
+				<option value="iphone12promax">Iphone 12 Pro Max</option>
+				<option value="iphone12pro">Iphone 12 Pro </option>
+				<!-- Agrega más opciones según tus modelos -->
+			</select>
+		</div>
+        
+		<header>
+			<h1>Tienda</h1>
+
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">1</span>
+								<p class="titulo-producto-carrito">Zapatos Nike</p>
+								<span class="precio-producto-carrito">$80</span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+				</div>
+			</div>
+		</header>
+
+
+		<div class="container-items">
+
+			<div class="item">
+				<figure>
+					<img
+						src="images/15 promax.webp"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Iphone 15 pro max</h2>
+					<p class="price">$8000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img
+                        src="images/15pro.webp"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Iphone 15 pro</h2>
+					<p class="price">$7000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img
+                        src="images/15.jpeg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Iphone 15</h2>
+					<p class="price">$7000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+
+			<div class="item">
+				<figure>
+					<img
+                        src="images/14promax.jpeg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Iphone 14 pro max</h2>
+					<p class="price">$7000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img
+                    src="images/14pro.webp"						
+                    alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Iphone 14 pro </h2>
+					<p class="price">$7500</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+                        src="images/14.jpeg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Iphone 14</h2>
+					<p class="price">$5000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+                        src="images/13pro.webp"
+                        alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Iphone 13 pro </h2>
+					<p class="price">$5000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+
+			<div class="item">
+				<figure>
+					<img
+                        src="images/iphhone 13.webp"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Iphone 13</h2>
+					<p class="price">$7000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img
+                        src="images/12promax.jpeg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Iphone 12 Pro Max</h2>
+					<p class="price">$7000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img
+                        src="images/12pro.jpeg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Iphone 12 Pro</h2>
+					<p class="price">$7000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img
+                        src="images/12.jpeg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Iphone 12</h2>
+					<p class="price">$7000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+		</div>
+
+        <footer class="footer container">
+
+            <img class="logo-2" src="images/iteam-logo.png"  alt="">
+            <div class="links">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="#">Politicas de Envios</a></li>
+                    <li><a href="#">Politicas de Privacidad</a></li>
+                    <li><a href="#">Terminos y condiciones</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <h4>Locales</h4>
+                <ul>
+                    <li><a href="#">C.C Plaza San Miguel stand 123</a></li>
+                    
+                </ul>
+            </div>
+            <div class="links">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="#">+51 981165377</a></li>
+                    <li><a href="#">01 54272099</a></li>  
+                </ul>
+            </div>
+        </footer>
+		<script src="jscarrito.js"></script>
+		<script src="filtroEquipos.js"></script>
+	</body>
+    
+</html>

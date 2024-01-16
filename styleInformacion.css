@@ -1,0 +1,144 @@
+/* Globales */
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+}
+
+body{
+    margin: 90px auto 0;
+    max-width: 1200px;
+    font-family: 'Lato', sans-serif;
+    color: #333;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+}
+
+.menu-1 ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu-1 li {
+    margin-right: 20px;
+}
+
+.menu-2 {
+    display: flex;
+}
+
+.socials {
+    display: flex;
+}
+
+.social {
+    margin-right: 10px;
+}
+
+/* Main */
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item{
+    border-radius: 10px;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.info-product{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-product button{
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.cart-empty{
+    padding: 20px;
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+/* Horario */
+.horario-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.horario-txt {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.txt {
+    margin-right: 20px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.links {
+    margin-right: 20px;
+}
+
+.links ul {
+    list-style: none;
+}
+
+.links ul li {
+    margin-bottom: 10px;
+}

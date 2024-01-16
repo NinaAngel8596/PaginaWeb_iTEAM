@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <div class="menu container">
+
+            <img class="logo-1" src="images/iteam-logo.png">
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="images/menu.png">
+            </label>
+            <nav class="navbar">
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="soporte.html">Soporte</a></li>
+                    </ul>
+                </div>
+                <img class="logo-2" src="images/iteam-logo.png" alt="">
+                <div class="menu-2">
+                    <ul>
+                        <li><a href="#">Horario</a></li>
+                    </ul>
+                    <div class="socials">
+                        <a href="#">
+                            <div class="social">
+                                <img src="images/s1.svg">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="images/s2.svg">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="images/s3.svg">
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+
+            </nav>
+        </div>
+        
+
+        
+
+        
+    </header>
+
+    <div class="buscar-filtrar-wrapper">
+        <input type="text" id="buscarNombre" placeholder="Buscar por nombre">
+        <button class="buscar-filtrar-button" onclick="buscarPorNombre()">Buscar</button>
+    
+        <label for="modeloFiltro">Filtrar por Modelo:</label>
+        <select id="modeloFiltro" onchange="filtrarPorModelo()">
+            <option value="todos">Todos</option>
+            <option value="iphone15promax">Iphone 15 Pro Max</option>
+            <option value="iphone14promax">Iphone 14 Pro Max</option>
+            <option value="iphone15pro">Iphone 15 Pro</option>
+            <option value="iphone15">Iphone 15</option>
+            <!-- Agrega más opciones según tus modelos -->
+        </select>
+    </div>
+    
+
+    
+    <div class="equipos">
+
+        
+       
+
+        <a href="Iphone15promax.html" class="equipo">
+            <div class="equipo-img">
+                <img src="images/iphoneSlider.png" alt="">
+            </div>
+            <div class="equipo-txt">
+                <h4>Iphone 15 Pro Max</h4>
+                <span class="precio">S/7,299.00</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+        </a>
+        
+         
+        <a  href="#" class="equipo">
+            <div class="equipo-img">
+                    <img src="images/celular4.png" alt="">
+            </div>
+            <div class="equipo-txt">
+                    <h4>Iphone 14 Pro Max</h4>
+                    <span class="precio">S/4,650.00</span>
+                    <button class="add-to-cart">Agregar al carrito</button>
+            </div>            
+        </a>
+
+        <a  href="#" class="equipo">
+            <div class="equipo-img">
+                <img src="images/celular1.png" alt="">
+            </div>
+            <div class="equipo-txt">
+                <h4>Iphone 15 Pro Max</h4>
+                <span class="precio">S/7,299.00</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+        </a>
+
+        <a  href="#" class="equipo">
+            <div class="equipo-img">
+                <img src="images/celular2.png" alt="">
+            </div>
+            <div class="equipo-txt">
+            <h4>Iphone 15 Pro</h4>
+            <span class="precio">S/6,799.00</span>
+            <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+        </a>
+
+        
+        <a  href="#" class="equipo">
+             <div class="equipo-img">
+                <img src="images/celular3.png" alt="">
+            </div>
+            <div class="equipo-txt">
+                <h4>Iphone 15</h4>
+                <span class="precio">S/4,700.00</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+        </a>
+
+        <a  href="#" class="equipo">
+            <div class="equipo-img">
+                    <img src="images/celular4.png" alt="">
+            </div>
+            <div class="equipo-txt">
+                    <h4>Iphone 14 Pro Max</h4>
+                    <span class="precio">S/4,650.00</span>
+                    <button class="add-to-cart">Agregar al carrito</button>
+            </div>            
+        </a>
+
+        <a  href="#" class="equipo">
+            <div class="equipo-img">
+                <img src="images/celular2.png" alt="">
+            </div>
+            <div class="equipo-txt">
+            <h4>Iphone 15 Pro</h4>
+            <span class="precio">S/6,799.00</span>
+            <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+        </a>
+
+        <a  href="#" class="equipo">
+            <div class="equipo-img">
+                <img src="images/celular3.png" alt="">
+            </div>
+            <div class="equipo-txt">
+                <h4>Iphone 15</h4>
+                <span class="precio">S/4,700.00</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+        </a>
+
+        <a  href="#" class="equipo">
+            <div class="equipo-img">
+                <img src="images/celular3.png" alt="">
+            </div>
+            <div class="equipo-txt">
+                <h4>Iphone 15</h4>
+                <span class="precio">S/4,700.00</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+        </a>
+        
+    </div>
+
+    <footer class="footer container">
+
+        <img class="logo-2" src="images/iteam-logo.png"  alt="">
+        <div class="links">
+            <h4>Enlaces</h4>
+            <ul>
+                <li><a href="#">Politicas de Envios</a></li>
+                <li><a href="#">Politicas de Privacidad</a></li>
+                <li><a href="#">Terminos y condiciones</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Locales</h4>
+            <ul>
+                <li><a href="#">C.C Plaza San Miguel stand 123</a></li>
+                
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Contacto</h4>
+            <ul>
+                <li><a href="#">+51 981165377</a></li>
+                <li><a href="#">01 54272099</a></li>  
+            </ul>
+        </div>
+    </footer>
+    
+    
+    <script src="filtroEquipos.js"></script>
+
+
+
+</body>
+</html>

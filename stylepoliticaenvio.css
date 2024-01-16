@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+    background-color: #080202;
+  font-family: "Poppins", sans-serif;
+}
+
+.menu{
+    position: absolute;
+    top:20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.navbar{
+    display: flex;
+}
+
+.menu-1{
+    margin-right: 180px;
+}
+
+.menu-2{
+    margin-left: 180px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-1{
+    width: 0;
+}
+
+.logo-2{
+    width: 150px;
+}
+
+.socials{
+    display: flex;
+}
+
+.social{
+    margin: 0 10px;
+    height: 40px;
+    width: 40px;
+    border: 2px solid teal;
+    border-radius: 50%;
+}
+
+.social:hover{
+    background-color: teal;
+}
+
+.social img{
+    margin:8px 0 0 10px;    
+}
+
+.menu .navbar ul li {
+   position: relative;
+   float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color:#ffffff;
+    display: block;
+    font-weight: bold;
+}
+
+.menu .navbar ul li a:hover{
+    color: teal;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+.contenedor-acordeon{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 80px;
+    
+}
+.contenedor-acordeon h2{
+    padding: 50PX;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 35px;
+    color: #ffffff;
+    font-size: 50PX;
+
+}
+.acordeon{
+    background: #080202;
+}
+.acordeon label{
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    background: teal;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 300ms ease;
+    border-radius: 10px; /* Añadido el border-radius a las preguntas frecuentes */
+
+}
+.contenido-acordeon p{
+    color: #ffffff;
+    font-size: 18PX;
+}
+.acordeon label:hover{
+    background: #2e2e2e;
+}
+.acordeon .contenido-acordeon{
+    padding: 0px;
+    margin: 0px 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+.btn-acordeon:checked ~ .contenido-acordeon{
+    max-height: 600px;
+    padding: 15px 0px;
+}
+.btn-acordeon{
+    display: none;
+}
